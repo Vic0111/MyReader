@@ -1,0 +1,12 @@
+<%- partial ('../navigation.ejs') %>
+<div class="container-fluid">
+    <%_.each(stories, function(story){%>
+        <div class="list-group">
+            <a class="list-group-item" href="/story/showstory/<%=story.id%>">
+                <h4 class="list-group-item-heading"><%=story.Title%></h4>
+                <p class="list-group-item-text"><%=story.Summary%></p>
+            </a>
+        </div>
+    <%})%>
+        
+</div>

@@ -1,0 +1,12 @@
+<%- partial ('../navigation.ejs') %>
+<%=story%>
+<div class="container container-fluid">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3><%=story.Title%></h3>
+        </div>
+        <div class="panel-body">
+            <%-story.Summary%>
+        </div>
+    </div>
+</div>
